@@ -1,13 +1,51 @@
-<ngx-charts-bar-horizontal
-  [view]="view"
-  [scheme]="colorScheme"
-  [results]="sampleData"
-  [gradient]="gradient"
-  [xAxis]="showXAxis"
-  [yAxis]="showYAxis"
-  [legend]="showLegend"
-  [showXAxisLabel]="showXAxisLabel"
-  [showYAxisLabel]="showYAxisLabel"
-  [xAxisLabel]="xAxisLabel"
-  [yAxisLabel]="yAxisLabel">
-</ngx-charts-bar-horizontal>
+<!-- <div>
+  <ngx-charts-bar-horizontal-2d
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="sampleData"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    [barPadding]="-100"
+    (select)="onSelect($event)">
+  </ngx-charts-bar-horizontal-2d>
+  
+  <app-custom-ngx-charts-bar-horizontal
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="sampleData"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    [barPadding]="-100"
+    (select)="onSelect($event)">
+  </app-custom-ngx-charts-bar-horizontal>
+</div> -->
+
+<div  class="chart-area">
+  <ngx-charts-bar-horizontal-stacked
+    [scheme]="colorScheme"
+    [results]="sampleData"
+    [gradient]="gradient"
+    [xAxis]="false"
+    [yAxis]="false"
+    [legend]="false"
+    [animations]="false"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    [barPadding]="100"
+    (select)="onSelect($event)">
+  </ngx-charts-bar-horizontal-stacked>
+</div>

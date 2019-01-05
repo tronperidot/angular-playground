@@ -6,9 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chart.component.css']
 })
 export class ChartComponent implements OnInit {
-
   // グラフの表示サイズ
-  view: number[] = [700, 400];
+  view: number[] = [700, 200];
 
   // 設定
   showXAxis = true;
@@ -27,9 +26,23 @@ export class ChartComponent implements OnInit {
 
   // サンプルデータ
   sampleData = [
-    {name: 'Germany', value: '100'},
-    {name: 'France', value: '200'},
-    {name: 'Japan', value: '300'}
+    {
+      "name": "Germany",
+      "series": [
+        {
+          "name": "2010",
+          "value": 40632
+        },
+        {
+          "name": "2000",
+          "value": 36953
+        },
+        {
+          "name": "1990",
+          "value": 31476
+        }
+      ]
+    },
   ];
 
   constructor() { }
